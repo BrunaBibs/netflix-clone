@@ -17,8 +17,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     // if [], run once when the row loads, and don't run it again
   }, [fetchUrl]);
 
-  console.log(movies);
-
   // fetchUrl is inside the snippet because the variable is outside of the box, so useEffect knows that needs to refire that url
 
   return (
